@@ -148,6 +148,8 @@ bool LinkedList<T>::removeBack()
 			isRemoved = true;
 		}
 	}
+	delete lastNode;
+	delete secondintoLast;
 	return(isRemoved);
 }	
 
